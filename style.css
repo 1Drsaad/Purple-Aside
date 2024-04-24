@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+body {
+  height: 100svh;
+  padding: 20px;
+}
+
+aside {
+  background: #2e2559;
+  height: 100%;
+  width: 200px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  border-radius: 20px;
+}
+
+aside .logo h1 {
+  margin: 20px;
+}
+
+aside .logo hr {
+  border: 1px solid gray;
+}
+
+aside .list ul {
+  margin-left: 15px;
+  list-style: none;
+}
+
+aside .list ul li span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  padding: 15px 0 15px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+aside .list ul li span i {
+  width: 20px;
+}
+
+aside .list ul li span:hover {
+  background-color: #fff;
+  border-radius: 50px 0 0 50px;
+  color: #2e2559;
+}
+
+aside .list ul li span:hover::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -50px;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  border-radius: 100%;
+  box-shadow: 25px 25px 0 #fff;
+}
+
+aside .list ul li span:hover::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -50px;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  border-radius: 100%;
+  box-shadow: 25px -25px 0 #fff;
+}
+
+aside .help {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  cursor: pointer;
+  color: #fff;
+}
